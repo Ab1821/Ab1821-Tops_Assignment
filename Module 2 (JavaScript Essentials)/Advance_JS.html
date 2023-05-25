@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3> Calculate subtotal price of quantity </h3>
+    <table style="width: 100%" border="none">
+        <tr>
+            <th> Product Info</th>
+            <th> Quantity </th>
+            <th> Price(per unit) </th>
+            <th> Price(subtotal)</th>
+            <th> Add/Remove</th>
+        </tr>
+        <tr>
+            <td class="item1">Forrunata windows hardware - Decorative holbacks - Mocha</td>
+            <td><input type="number" id="quantity1" placeholder="Enter quantity" oninput='displayPrice()'></td>
+            <td id="price1"> $29.99</td>
+            <td>
+                <p id="showprice1">$0</p>
+            </td>
+            <td><button id="btnRemove1" onclick="remove1()" type="button">Remove</td>
+
+        </tr>
+        <tr>
+            <td class="item2">Woven Trellis window hardware - Clips rings - Bronze</td>
+            <td><input type="number" id="quantity2" placeholder="Enter quantity" oninput="displayPrice()"></td>
+            <td id="price2">$12.99</td>
+            <td>
+                <p id="showprice2">$0</p>
+            </td>
+            <td><button id="btnRemove2" onclick="remove2()">Remove</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>
+                <p id="showsubtotal">$0
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+
+
+
+    </table>
+
+</html>
+<script src="Script.js"></script>
