@@ -28,7 +28,6 @@ function remove1() {
         displayPrice();
 
     }
-
 }
 function remove2() {
     if (quantity2.value > 0) {
